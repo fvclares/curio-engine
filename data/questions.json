@@ -1,137 +1,137 @@
 [
   {
-    "id": "artes-o-que-pablo-picasso-carregava-no-bolso-p",
-    "category": "Artes",
-    "prompt": "O que Pablo Picasso carregava no bolso para disparar em quem fazia perguntas chatas?",
+    "id": "animais-qual-destes-animais-faz-coco-em-formato-",
+    "category": "Animais",
+    "prompt": "Qual destes animais faz cocô em formato de cubo perfeito?",
     "answers": [
       {
-        "text": "Arma de festim",
+        "text": "Wombat",
         "isCorrect": true
       },
       {
-        "text": "Borrifador de tinta",
+        "text": "Coala",
         "isCorrect": false
       },
       {
-        "text": "Apito de barulho",
+        "text": "Canguru",
         "isCorrect": false
       },
       {
-        "text": "Buzina de ar",
+        "text": "Diabo-da-tasmânia",
         "isCorrect": false
       }
     ],
-    "explanation": "Picasso andava com um revólver com munição de festim e disparava em quem perguntava o significado da sua arte!",
-    "questionAudio": "assets/audio/artes-o-que-pablo-picasso-carregava-no-bolso-p-question.wav",
-    "answerAudio": "assets/audio/artes-o-que-pablo-picasso-carregava-no-bolso-p-answer.wav",
-    "explanationAudio": "assets/audio/artes-o-que-pablo-picasso-carregava-no-bolso-p-explanation.wav"
+    "explanation": "O wombat é o único animal que faz cocô em formato de cubo! Isso impede que as fezes rolem das pedras onde eles marcam território.",
+    "questionAudio": "assets/audio/animais-qual-destes-animais-faz-coco-em-formato--question.wav",
+    "answerAudio": "assets/audio/animais-qual-destes-animais-faz-coco-em-formato--answer.wav",
+    "explanationAudio": "assets/audio/animais-qual-destes-animais-faz-coco-em-formato--explanation.wav"
   },
   {
-    "id": "artes-em-qual-periodo-as-olimpiadas-entregaram",
-    "category": "Artes",
-    "prompt": "Em qual período as Olimpíadas entregaram medalhas de ouro para obras de arte?",
+    "id": "animais-qual-animal-segura-a-pata-do-outro-enqua",
+    "category": "Animais",
+    "prompt": "Qual animal segura a pata do outro enquanto dorme para não se perder na água?",
     "answers": [
       {
-        "text": "De 1912 a 1948",
+        "text": "Nutria de água",
+        "isCorrect": false
+      },
+      {
+        "text": "Lontra-marinha",
         "isCorrect": true
       },
       {
-        "text": "De 1896 a 1908",
+        "text": "Castor",
         "isCorrect": false
       },
       {
-        "text": "De 1952 a 1968",
-        "isCorrect": false
-      },
-      {
-        "text": "De 1972 a 1988",
+        "text": "Foca-cinzenta",
         "isCorrect": false
       }
     ],
-    "explanation": "Nas Olimpíadas antigas modernas, artistas competiam e ganhavam medalhas de verdade em pintura, escultura e música!",
-    "questionAudio": "assets/audio/artes-em-qual-periodo-as-olimpiadas-entregaram-question.wav",
-    "answerAudio": "assets/audio/artes-em-qual-periodo-as-olimpiadas-entregaram-answer.wav",
-    "explanationAudio": "assets/audio/artes-em-qual-periodo-as-olimpiadas-entregaram-explanation.wav"
+    "explanation": "As lontras-marinhas dão as mãos enquanto dormem na superfície para a correnteza não separá-las. Muito fofo!",
+    "questionAudio": "assets/audio/animais-qual-animal-segura-a-pata-do-outro-enqua-question.wav",
+    "answerAudio": "assets/audio/animais-qual-animal-segura-a-pata-do-outro-enqua-answer.wav",
+    "explanationAudio": "assets/audio/animais-qual-animal-segura-a-pata-do-outro-enqua-explanation.wav"
   },
   {
-    "id": "artes-por-que-leonardo-da-vinci-escrevia-quase",
-    "category": "Artes",
-    "prompt": "Por que Leonardo da Vinci escrevia quase todas as suas notas espelhadas, da direita para a esquerda?",
+    "id": "animais-por-que-os-flamingos-nascem-cinzas-e-fic",
+    "category": "Animais",
+    "prompt": "Por que os flamingos nascem cinzas e ficam rosa depois de adultos?",
     "answers": [
       {
-        "text": "Ele era canhoto",
+        "text": "Por causa da iluminação",
+        "isCorrect": false
+      },
+      {
+        "text": "Pela alimentação",
         "isCorrect": true
       },
       {
-        "text": "Para ocultar segredos",
+        "text": "Mudança de clima",
         "isCorrect": false
       },
       {
-        "text": "Era um hábito italiano",
-        "isCorrect": false
-      },
-      {
-        "text": "Tinha visão trocada",
+        "text": "Por troca de penas",
         "isCorrect": false
       }
     ],
-    "explanation": "Como era canhoto, escrever da direita para a esquerda impedia que sua mão borrasse a tinta fresca no papel!",
-    "questionAudio": "assets/audio/artes-por-que-leonardo-da-vinci-escrevia-quase-question.wav",
-    "answerAudio": "assets/audio/artes-por-que-leonardo-da-vinci-escrevia-quase-answer.wav",
-    "explanationAudio": "assets/audio/artes-por-que-leonardo-da-vinci-escrevia-quase-explanation.wav"
+    "explanation": "Eles ficam rosa por causa da pigmentação dos camarões e algas que comem. Se mudarem a dieta, voltam a ficar brancos!",
+    "questionAudio": "assets/audio/animais-por-que-os-flamingos-nascem-cinzas-e-fic-question.wav",
+    "answerAudio": "assets/audio/animais-por-que-os-flamingos-nascem-cinzas-e-fic-answer.wav",
+    "explanationAudio": "assets/audio/animais-por-que-os-flamingos-nascem-cinzas-e-fic-explanation.wav"
   },
   {
-    "id": "artes-do-que-era-feita-a-famosa-tinta-marrom-m",
-    "category": "Artes",
-    "prompt": "Do que era feita a famosa tinta 'marrom múmia', muito usada por pintores no século 19?",
+    "id": "animais-qual-destes-animais-consegue-segurar-o-f",
+    "category": "Animais",
+    "prompt": "Qual destes animais consegue segurar o fôlego embaixo d'água por mais tempo?",
     "answers": [
       {
-        "text": "Múmias de verdade",
+        "text": "Golfinho",
+        "isCorrect": false
+      },
+      {
+        "text": "Bicho-preguiça",
         "isCorrect": true
       },
       {
-        "text": "Cascas de nozes",
+        "text": "Castor",
         "isCorrect": false
       },
       {
-        "text": "Lama do Rio Nilo",
-        "isCorrect": false
-      },
-      {
-        "text": "Sementes queimadas",
+        "text": "Lontra",
         "isCorrect": false
       }
     ],
-    "explanation": "Pode acreditar: o pigmento era feito moendo múmias egípcias reais! A tinta só parou de ser vendida nos anos 1960.",
-    "questionAudio": "assets/audio/artes-do-que-era-feita-a-famosa-tinta-marrom-m-question.wav",
-    "answerAudio": "assets/audio/artes-do-que-era-feita-a-famosa-tinta-marrom-m-answer.wav",
-    "explanationAudio": "assets/audio/artes-do-que-era-feita-a-famosa-tinta-marrom-m-explanation.wav"
+    "explanation": "Diminuindo os batimentos do coração, o bicho-preguiça consegue ficar até 40 minutos debaixo d'água, superando os golfinhos!",
+    "questionAudio": "assets/audio/animais-qual-destes-animais-consegue-segurar-o-f-question.wav",
+    "answerAudio": "assets/audio/animais-qual-destes-animais-consegue-segurar-o-f-answer.wav",
+    "explanationAudio": "assets/audio/animais-qual-destes-animais-consegue-segurar-o-f-explanation.wav"
   },
   {
-    "id": "artes-qual-objeto-curioso-de-banheiro-o-artist",
-    "category": "Artes",
-    "prompt": "Qual objeto curioso de banheiro o artista Marcel Duchamp assinou e colocou em um museu?",
+    "id": "animais-qual-destes-animais-costuma-ter-um-melho",
+    "category": "Animais",
+    "prompt": "Qual destes animais costuma ter um melhor amigo e fica estressado longe dele?",
     "answers": [
       {
-        "text": "Um mictório",
+        "text": "Vaca",
         "isCorrect": true
       },
       {
-        "text": "Um vaso sanitário",
+        "text": "Cavalo",
         "isCorrect": false
       },
       {
-        "text": "Uma saboneteira",
+        "text": "Ovelha",
         "isCorrect": false
       },
       {
-        "text": "Uma escova de dentes",
+        "text": "Gato",
         "isCorrect": false
       }
     ],
-    "explanation": "Ele comprou um mictório comum, assinou como 'R. Mutt' e batizou a obra de 'A Fonte', mudando a história da arte!",
-    "questionAudio": "assets/audio/artes-qual-objeto-curioso-de-banheiro-o-artist-question.wav",
-    "answerAudio": "assets/audio/artes-qual-objeto-curioso-de-banheiro-o-artist-answer.wav",
-    "explanationAudio": "assets/audio/artes-qual-objeto-curioso-de-banheiro-o-artist-explanation.wav"
+    "explanation": "Estudos mostram que as vacas criam laços fortes de amizade e ficam super estressadas quando são separadas da sua melhor amiga!",
+    "questionAudio": "assets/audio/animais-qual-destes-animais-costuma-ter-um-melho-question.wav",
+    "answerAudio": "assets/audio/animais-qual-destes-animais-costuma-ter-um-melho-answer.wav",
+    "explanationAudio": "assets/audio/animais-qual-destes-animais-costuma-ter-um-melho-explanation.wav"
   }
 ]
