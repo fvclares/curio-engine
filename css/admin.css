@@ -1,0 +1,191 @@
+.admin-body {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #2A2550 0%, #1B1836 55%, #120F26 100%);
+  padding: 2rem 1rem 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.admin-shell {
+  width: 100%;
+  max-width: 34rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.admin-header {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.admin-eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.admin-header h1 {
+  margin: 0.25rem 0;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-weight: 800;
+}
+
+.admin-subtitle {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.admin-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.admin-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.admin-hint {
+  margin: 0 0 1rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.admin-hint a {
+  color: var(--color-accent);
+}
+
+.admin-hint code {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.1rem 0.4rem;
+  border-radius: 6px;
+  font-size: 0.85em;
+}
+
+.admin-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0.75rem 0 0.35rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.admin-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.7rem 0.9rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: var(--font-base);
+  font-size: 0.95rem;
+}
+
+.admin-input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.admin-input:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+.admin-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.9rem 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+}
+
+.admin-checkbox input {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--color-success);
+}
+
+.admin-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.admin-button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.6rem;
+  font-family: var(--font-base);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1B1836;
+  background: linear-gradient(135deg, var(--color-success) 0%, var(--color-accent) 100%);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  margin-top: 0.75rem;
+}
+
+.admin-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.admin-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.admin-button--secondary {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+
+.admin-button--ghost {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.admin-status {
+  min-height: 1.2rem;
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.admin-status--ok {
+  color: #7EE7A8;
+}
+
+.admin-status--error {
+  color: #FF8B8B;
+}
+
+.admin-status--pending {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.admin-footer-note {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.admin-footer-note a {
+  color: var(--color-accent);
+}

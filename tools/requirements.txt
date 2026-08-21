@@ -1,0 +1,7 @@
+# Kokoro TTS (motor de síntese de voz local)
+kokoro>=0.9.4
+
+# Pós-processamento de áudio
+soundfile>=0.12.1
+numpy>=1.26
+scipy>=1.11

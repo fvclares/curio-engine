@@ -1,0 +1,61 @@
+name: Gerar novas perguntas (IA)
+
+# Usa a API gratuita do Google Gemini para gerar novas perguntas de quiz.
+# Requer o secret GEMINI_API_KEY (Settings > Secrets and variables > Actions).
+on:
+  workflow_dispatch:
+    inputs:
+      categoria:
+        description: "Categoria das novas perguntas (ex: Espaço, Animais, História)"
+        required: true
+        type: string
+      quantidade:
+        description: "Quantas perguntas gerar"
+        required: false
+        default: "5"
+        type: string
+      gerar_audio_tambem:
+        description: "Já gerar o áudio das perguntas novas nesta mesma execução"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  gerar-perguntas:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerar perguntas com Gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python tools/generate_questions.py \
+            --category "${{ inputs.categoria }}" \
+            --quantity "${{ inputs.quantidade }}"
+
+      - name: Instalar espeak-ng (dependência do Kokoro)
+        if: ${{ inputs.gerar_audio_tambem }}
+        run: sudo apt-get update && sudo apt-get install -y espeak-ng
+
+      - name: Instalar dependências Python (Kokoro TTS)
+        if: ${{ inputs.gerar_audio_tambem }}
+        run: pip install -r tools/requirements.txt
+
+      - name: Narrar as perguntas novas
+        if: ${{ inputs.gerar_audio_tambem }}
+        run: python tools/generate_audio.py
+
+      - name: Commitar perguntas e áudios novos
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: gera novas perguntas via IA (${{ inputs.categoria }})"
+          file_pattern: "data/questions.json data/history.json assets/audio/**"

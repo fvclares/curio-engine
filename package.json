@@ -1,0 +1,7 @@
+{
+  "name": "curio-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Curio Engine - front-end HTML/CSS/JS puro, sem build e sem dependências de runtime. Este package.json fica reservado caso ferramentas internas voltem a ser necessárias no futuro."
+}

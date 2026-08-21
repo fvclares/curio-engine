@@ -1,0 +1,318 @@
+{
+    "Espaço": {
+        "emoji": "🚀",
+        "primary": "#5D8BFF",
+        "secondary": "#91B7FF",
+        "background": "space",
+        "floatingEmojis": ["⭐", "🌙", "🪐", "🚀", "✨"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Animais": {
+        "emoji": "🦁",
+        "primary": "#55A630",
+        "secondary": "#80ED99",
+        "background": "forest",
+        "floatingEmojis": ["🐾", "🦁", "🐵", "🦋", "🌿"],
+        "animation": { "amount": 60, "speed": 7 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "História": {
+        "emoji": "📜",
+        "primary": "#C98C2D",
+        "secondary": "#E8C57A",
+        "background": "history",
+        "floatingEmojis": ["🏰", "⚔️", "👑", "📜", "🕯️"],
+        "animation": { "amount": 60, "speed": 10 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Ciência": {
+        "emoji": "🔬",
+        "primary": "#9B5DE5",
+        "secondary": "#D6A4FF",
+        "background": "science",
+        "floatingEmojis": ["🧬", "🔬", "🔭", "🧪", "⚛️"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Geografia": {
+        "emoji": "🌍",
+        "primary": "#00BBF9",
+        "secondary": "#7DE2FF",
+        "background": "geography",
+        "floatingEmojis": ["🌍", "🗺️", "🧭", "🏔️", "🌋"],
+        "animation": { "amount": 60, "speed": 9 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Biologia": {
+        "emoji": "🧬",
+        "primary": "#8AC926",
+        "secondary": "#C5F37A",
+        "background": "biology",
+        "floatingEmojis": ["🧬", "🦠", "🩸", "🌿", "🐸"],
+        "animation": { "amount": 60, "speed": 7 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Tecnologia": {
+        "emoji": "💻",
+        "primary": "#F15BB5",
+        "secondary": "#FFA6DE",
+        "background": "technology",
+        "floatingEmojis": ["💻", "⚙️", "🔋", "💾", "📡"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Matemática": {
+        "emoji": "📐",
+        "primary": "#FEE440",
+        "secondary": "#FFF399",
+        "background": "math",
+        "floatingEmojis": ["➕", "➖", "➗", "✖️", "📐"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Esportes": {
+        "emoji": "⚽",
+        "primary": "#FB5607",
+        "secondary": "#FF9B6A",
+        "background": "sports",
+        "floatingEmojis": ["⚽", "🏀", "🎾", "🥇", "🏆"],
+        "animation": { "amount": 60, "speed": 7 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Literatura": {
+        "emoji": "📚",
+        "primary": "#8338EC",
+        "secondary": "#C49BFF",
+        "background": "literature",
+        "floatingEmojis": ["📚", "🖋️", "📖", "🎭", "📜"],
+        "animation": { "amount": 60, "speed": 10 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Física": {
+        "emoji": "🍎",
+        "primary": "#00F5D4",
+        "secondary": "#7BF1DF",
+        "background": "physics",
+        "floatingEmojis": ["🍎", "🧲", "⚛️", "📡", "💡"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Química": {
+        "emoji": "🧪",
+        "primary": "#06D6A0",
+        "secondary": "#82E2C8",
+        "background": "chemistry",
+        "floatingEmojis": ["🧪", "⚗️", "🔥", "☢️", "💧"],
+        "animation": { "amount": 60, "speed": 9 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Arte": {
+        "emoji": "🎨",
+        "primary": "#EF476F",
+        "secondary": "#F2849E",
+        "background": "art",
+        "floatingEmojis": ["🎨", "🖌️", "🖼️", "🎭", "🖍️"],
+        "animation": { "amount": 60, "speed": 10 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Astronomia": {
+        "emoji": "🔭",
+        "primary": "#118AB2",
+        "secondary": "#6DB8D1",
+        "background": "astronomy",
+        "floatingEmojis": ["🔭", "🌌", "☄️", "🛸", "🌍"],
+        "animation": { "amount": 60, "speed": 9 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Entretenimento": {
+        "emoji": "🎪",
+        "primary": "#FFD166",
+        "secondary": "#FFE399",
+        "background": "entertainment",
+        "floatingEmojis": ["🎪", "🎫", "🎤", "🧩", "🎲"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Cinema": {
+        "emoji": "🎬",
+        "primary": "#073B4C",
+        "secondary": "#457283",
+        "background": "movies",
+        "floatingEmojis": ["🎬", "🍿", "🎥", "🎞️", "🎟️"],
+        "animation": { "amount": 60, "speed": 7 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Música": {
+        "emoji": "🎵",
+        "primary": "#9D4EDD",
+        "secondary": "#C38EED",
+        "background": "music",
+        "floatingEmojis": ["🎵", "🎸", "🎧", "🎹", "🥁"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Culinária": {
+        "emoji": "👨‍🍳",
+        "primary": "#F77F00",
+        "secondary": "#F9A44D",
+        "background": "culinary",
+        "floatingEmojis": ["👨‍🍳", "🍳", "🍕", "🍰", "🌶️"],
+        "animation": { "amount": 60, "speed": 9 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Mitologia": {
+        "emoji": "⚡",
+        "primary": "#D4AF37",
+        "secondary": "#E5CC70",
+        "background": "mythology",
+        "floatingEmojis": ["⚡", "🏛️", "🔱", "🐉", "🏺"],
+        "animation": { "amount": 60, "speed": 10 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Games": {
+        "emoji": "🎮",
+        "primary": "#390099",
+        "secondary": "#754DB3",
+        "background": "games",
+        "floatingEmojis": ["🎮", "🕹️", "👾", "🪙", "🏆"],
+        "animation": { "amount": 60, "speed": 7 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Corpo Humano": {
+        "emoji": "🫀",
+        "primary": "#E63946",
+        "secondary": "#F4978E",
+        "background": "human_body",
+        "floatingEmojis": ["🫀", "🧠", "🫁", "🦴", "👁️"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Dinossauros": {
+        "emoji": "🦖",
+        "primary": "#588157",
+        "secondary": "#A3B18A",
+        "background": "dinosaurs",
+        "floatingEmojis": ["🦖", "🦕", "🌋", "🦴", "🌿"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Oceanos": {
+        "emoji": "🌊",
+        "primary": "#0077B6",
+        "secondary": "#90E0EF",
+        "background": "ocean",
+        "floatingEmojis": ["🌊", "🐋", "🐬", "🦈", "🐠"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Países": {
+        "emoji": "🌎",
+        "primary": "#3A86FF",
+        "secondary": "#8ECAE6",
+        "background": "countries",
+        "floatingEmojis": ["🌎", "🗺️", "🏛️", "✈️", "🏳️"],
+        "animation": { "amount": 60, "speed": 9 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Bandeiras": {
+        "emoji": "🏳️",
+        "primary": "#4361EE",
+        "secondary": "#A5B4FC",
+        "background": "flags",
+        "floatingEmojis": ["🏳️", "🌍", "🗺️", "✈️", "📍"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Invenções": {
+        "emoji": "💡",
+        "primary": "#F4A261",
+        "secondary": "#FFD6A5",
+        "background": "inventions",
+        "floatingEmojis": ["💡", "⚙️", "🔧", "📡", "🔬"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Profissões": {
+        "emoji": "👷",
+        "primary": "#6A994E",
+        "secondary": "#A7C957",
+        "background": "professions",
+        "floatingEmojis": ["👷", "👩‍⚕️", "👨‍🚀", "👨‍🍳", "👨‍🏫"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Recordes": {
+        "emoji": "🏅",
+        "primary": "#F77F00",
+        "secondary": "#FFBE0B",
+        "background": "records",
+        "floatingEmojis": ["🏅", "🏆", "🥇", "⭐", "🎖️"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Mistérios": {
+        "emoji": "🕵️",
+        "primary": "#6D597A",
+        "secondary": "#B8A0C9",
+        "background": "mystery",
+        "floatingEmojis": ["🕵️", "🔍", "❓", "🏺", "🌑"],
+        "animation": { "amount": 60, "speed": 9 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Natureza": {
+        "emoji": "🌳",
+        "primary": "#2A9D8F",
+        "secondary": "#8EDFD2",
+        "background": "nature",
+        "floatingEmojis": ["🌳", "🍃", "🌺", "🪵", "🌻"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Clima": {
+        "emoji": "🌦️",
+        "primary": "#4CC9F0",
+        "secondary": "#ADE8F4",
+        "background": "weather",
+        "floatingEmojis": ["☀️", "🌧️", "⛈️", "❄️", "🌪️"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Lendas": {
+        "emoji": "🐲",
+        "primary": "#9D0208",
+        "secondary": "#E85D75",
+        "background": "legends",
+        "floatingEmojis": ["🐲", "🧚", "🦄", "👻", "🏰"],
+        "animation": { "amount": 60, "speed": 9 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Idiomas": {
+        "emoji": "🗣️",
+        "primary": "#4361EE",
+        "secondary": "#A5B4FC",
+        "background": "languages",
+        "floatingEmojis": ["🗣️", "🌍", "📚", "✍️", "🔤"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Empresas": {
+        "emoji": "🏢",
+        "primary": "#264653",
+        "secondary": "#6D8C99",
+        "background": "companies",
+        "floatingEmojis": ["🏢", "💼", "📈", "💰", "🏭"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    },
+    "Transporte": {
+        "emoji": "🚄",
+        "primary": "#577590",
+        "secondary": "#98C1D9",
+        "background": "transport",
+        "floatingEmojis": ["✈️", "🚄", "🚢", "🚗", "🚲"],
+        "animation": { "amount": 60, "speed": 8 },
+        "answerMarkers": ["#FF595E", "#1982C4", "#8AC926", "#FFCA3A"]
+    }
+
+}

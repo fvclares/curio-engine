@@ -1,0 +1,46 @@
+name: Gerar áudio
+
+# Roda 100% na nuvem do GitHub, sem precisar do seu computador.
+# Use a aba "Actions" do repositório > "Gerar áudio" > "Run workflow".
+on:
+  workflow_dispatch:
+    inputs:
+      forcar:
+        description: "Forçar regeneração mesmo dos áudios que já existem (--force)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  gerar-audio:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar espeak-ng (dependência do Kokoro)
+        run: sudo apt-get update && sudo apt-get install -y espeak-ng
+
+      - name: Instalar dependências Python (Kokoro TTS)
+        run: pip install -r tools/requirements.txt
+
+      - name: Gerar narrações em áudio
+        run: |
+          if [ "${{ inputs.forcar }}" = "true" ]; then
+            python tools/generate_audio.py --force
+          else
+            python tools/generate_audio.py
+          fi
+
+      - name: Commitar áudios gerados
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: gera áudio automático via GitHub Actions"
+          file_pattern: "assets/audio/** data/questions.json"

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curio Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Contêiner do fundo animado com emojis (fica atrás do card) -->
+    <div id="emoji-background-container" class="emoji-background"></div>
+
+    <main class="app-shell" aria-live="polite">
+      <section class="quiz-stage" id="quizStage">
+        <p class="status-text">Loading Curio Engine...</p>
+      </section>
+    </main>
+
+    <!-- Contêiner da explosão de confete ao acertar (fica na frente do card) -->
+    <div id="confetti-container" class="confetti-layer"></div>
+
+    <!-- Tela de início: dá tempo de ligar a gravação de tela antes do quiz começar -->
+    <div id="startScreen" class="start-screen">
+      <div class="start-screen__content">
+        <p class="start-screen__eyebrow">Curio Engine</p>
+        <h1 class="start-screen__title">Pronto para gravar?</h1>
+        <p class="start-screen__subtitle">
+          Ative a gravação de tela do seu celular agora. Quando tocar em
+          "Iniciar", o quiz começa sozinho — com áudio — e roda até o fim
+          sem precisar de mais nenhum toque.
+        </p>
+        <button id="startButton" class="start-screen__button" type="button">
+          ▶️ Iniciar
+        </button>
+      </div>
+    </div>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

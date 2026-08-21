@@ -1,0 +1,477 @@
+:root {
+
+  /* Fundo */
+  --color-background: #F8F6FF;
+
+  /* Cards */
+  --color-surface: #FFFFFF;
+  --color-surface-soft: #F5F1FF;
+
+  /* Texto */
+  --color-text: #41465C;
+  --color-muted: #8A90A8;
+
+  /* Azul principal */
+  --color-accent: #69B7FF;
+  --color-accent-strong: #4599F0;
+
+  /* Rosa principal */
+  --color-success: #FF8BC6;
+  --color-success-strong: #FF6DB3;
+
+  /* Lilás de apoio */
+  --color-secondary: #C5B2FF;
+
+  /* Bordas */
+  --color-border: #DDE7FF;
+
+  /* Sombras */
+  --color-shadow: rgba(120,150,255,.18);
+
+  /* Transparências */
+  --color-bg-card-front: rgba(255,255,255,.82);
+  --color-bg-success-soft: rgba(255,139,198,.15);
+  --color-bg-muted-soft: rgba(105,183,255,.10);
+  --color-bg-explanation: rgba(197,178,255,.12);
+
+  --font-base: "Baloo 2", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(255, 209, 102, var(--alpha-light-shade)), transparent 30rem),
+    radial-gradient(circle at bottom right, rgba(255, 111, 97, var(--alpha-lighter-shade)), transparent 32rem),
+    var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-base);
+}
+
+.app-shell {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 1rem;
+}
+
+#quizStage {
+  position: relative;
+}
+
+.quiz-stage {
+  display: grid;
+  width: min(100%, 24rem);
+  min-height: min(92vh, 56rem);
+  align-content: center;
+}
+
+/* =========================================
+   ESTRUTURA DO CARD DE PERGUNTA
+========================================= */
+
+.question-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 660px;
+  padding: 1.75rem;
+  border: 2px solid var(--color-border);
+  border-radius: 28px;
+  background: var(--color-bg-card-front);
+  box-shadow: 0 1.25rem 3rem var(--color-shadow);
+  animation: fadeIn 0.5s ease-out;
+  overflow: hidden; 
+}
+
+.timer-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: var(--color-surface-soft);
+  z-index: 10;
+}
+
+.timer-bar-progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-strong));
+  width: 100%;
+  transition: width 0.1s linear;
+  box-shadow: inset 0 0 8px var(--color-accent);
+}
+
+.category-header{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin:12px 0;
+}
+
+.question-category {
+  background: var(--color-accent);
+  color: var(--color-surface); /* Branco original */
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  margin: 0;
+}
+
+.category-emoji {
+  font-size: 40px;
+  line-height: 1;
+  margin: 0;
+}
+
+.question-title {
+  margin: 0;
+  font-size: clamp(1.4rem, 4.5vw, 1.8rem);
+  line-height: 1.15;
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* =========================================
+   ÁREA DE RESPOSTAS E FLIP 3D
+========================================= */
+
+.answer-area{
+    flex:1;
+    position:relative;
+    perspective:1200px;
+}
+
+.card-inner{
+    position:absolute;
+    inset:0;
+    transform-style:preserve-3d;
+    transition:transform .7s ease;
+}
+
+.card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back{
+    position:absolute;
+    inset:0;
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-back{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    transform:rotateY(180deg);
+}
+
+.answer-list {
+  flex: 1;
+  display: grid;
+  gap: .75rem;
+  align-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.answer-card {
+  padding: 1.15rem 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: 18px;
+  background: var(--color-surface-soft);
+  color: var(--color-text);
+  font-size: 1.2rem;
+  line-height: 1.35;
+  transition: all 0.3s ease;
+}
+
+.answer-card.answer-correct {
+  border-color: var(--color-success);
+  background: var(--color-bg-success-soft);
+  color: var(--color-success-strong);
+  font-weight: 700;
+}
+
+.answer-card.answer-wrong {
+  border-color: var(--color-muted);
+  background: var(--color-bg-muted-soft);
+  color: var(--color-muted);
+  opacity: 0.6;
+}
+
+.explanation-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 24px;
+  border: 2px solid var(--color-accent);
+  border-radius: 20px;
+  background: var(--color-bg-explanation);
+  min-height: 380px;
+  overflow: hidden;
+}
+
+.explanation-text {
+  margin: 0;
+  width: 100%;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* =========================================
+   TEXTOS DE STATUS E COMPONENTES ISOLADOS
+========================================= */
+
+.status-text {
+  margin: 0;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+.error-text {
+  color: var(--color-base-error);
+}
+
+.timer-ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.timer-circle {
+  width: 100px;
+  height: 100px;
+}
+
+.timer-bar-container {
+  position: relative;
+  height: 6px;
+  background: var(--color-surface-soft);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  box-shadow: inset 0 1px 3px var(--color-shadow);
+}
+
+/* =========================================
+   BACKGROUND ANIMADO DE EMOJIS
+========================================= */
+
+.emoji-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.confetti-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.floating-emoji {
+  position: absolute;
+  bottom: -100px;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.burst-emoji {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  font-size: 34px;
+  opacity: 1;
+  user-select: none;
+  pointer-events: none;
+  animation: burstOut ease-out forwards;
+}
+
+/* =========================================
+   KEYFRAMES GERAIS E EXPLOSÃO
+========================================= */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-10px); }
+}
+
+@keyframes burstOut {
+  0% { transform: translate(-50%, -50%) scale(0.3) rotate(0deg); opacity: 1; }
+  70% { opacity: 1; }
+  100% {
+    transform: translate(calc(-50% + var(--dx, 0px)), calc(-50% + var(--dy, 0px))) scale(1.15) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* =========================================
+   ROTAS DOS EMOJIS (FUNDO ANIMADO)
+========================================= */
+
+@keyframes floatStraight {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.8; }
+  100% { transform: translate(0, -120vh) rotate(360deg); opacity: 0; }
+}
+
+@keyframes floatLeft {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.8; }
+  100% { transform: translate(-30vw, -120vh) rotate(-360deg); opacity: 0; }
+}
+
+@keyframes floatRight {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.8; }
+  100% { transform: translate(30vw, -120vh) rotate(360deg); opacity: 0; }
+}
+
+@keyframes zigzagFloat {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+  20% { opacity: 0.8; transform: translate(40px, -20vh) rotate(45deg); }
+  50% { transform: translate(-40px, -60vh) rotate(180deg); }
+  90% { opacity: 0.8; }
+  100% { transform: translate(40px, -120vh) rotate(360deg); opacity: 0; }
+}
+
+/* =========================================
+   MEDIA QUERIES
+========================================= */
+
+@media (min-width: 48rem) {
+  .app-shell {
+    padding: 2rem;
+  }
+
+  .question-card {
+    padding: 1.5rem;
+  }
+}
+
+/* =========================================
+   TELA DE INÍCIO
+========================================= */
+
+.start-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(160deg, #2A2550 0%, #1B1836 55%, #120F26 100%);
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.start-screen--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.start-screen__content {
+  max-width: 26rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.start-screen__eyebrow {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.start-screen__title {
+  margin: 0;
+  font-size: clamp(1.75rem, 6vw, 2.4rem);
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.start-screen__subtitle {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.start-screen__button {
+  border: none;
+  border-radius: 999px;
+  padding: 1rem 2.5rem;
+  font-family: var(--font-base);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1B1836;
+  background: linear-gradient(135deg, var(--color-success) 0%, var(--color-accent) 100%);
+  box-shadow: 0 10px 30px rgba(255, 139, 198, 0.35);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.start-screen__button:hover,
+.start-screen__button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(255, 139, 198, 0.45);
+}
+
+.start-screen__button:active {
+  transform: translateY(0);
+}

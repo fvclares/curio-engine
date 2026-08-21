@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curio Engine — Painel de Controle</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/admin.css" />
+  </head>
+  <body class="admin-body">
+    <main class="admin-shell">
+      <header class="admin-header">
+        <p class="admin-eyebrow">Curio Engine</p>
+        <h1>Painel de Controle</h1>
+        <p class="admin-subtitle">
+          Dispare a geração de novas perguntas e de áudio direto daqui, sem
+          precisar abrir o GitHub.
+        </p>
+      </header>
+
+      <section class="admin-card">
+        <h2>1. Conexão com o GitHub</h2>
+        <p class="admin-hint">
+          Crie um
+          <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">
+            token de acesso pessoal (fine-grained)</a>
+          com permissão apenas de <strong>Actions: Read and write</strong> no
+          seu repositório do Curio Engine. O token fica salvo só neste
+          navegador (localStorage) — nunca é enviado a lugar nenhum além da
+          API do GitHub, e nunca é commitado no repositório.
+        </p>
+
+        <label class="admin-label" for="repoInput">Repositório (usuario/repositorio)</label>
+        <input id="repoInput" class="admin-input" type="text" placeholder="seu-usuario/curio-engine" autocomplete="off" />
+
+        <label class="admin-label" for="branchInput">Branch</label>
+        <input id="branchInput" class="admin-input" type="text" placeholder="main" autocomplete="off" />
+
+        <label class="admin-label" for="tokenInput">Token de acesso pessoal</label>
+        <input id="tokenInput" class="admin-input" type="password" placeholder="github_pat_..." autocomplete="off" />
+
+        <div class="admin-actions">
+          <button id="saveConfigButton" class="admin-button admin-button--secondary" type="button">
+            💾 Salvar neste navegador
+          </button>
+          <button id="clearConfigButton" class="admin-button admin-button--ghost" type="button">
+            🗑️ Esquecer token
+          </button>
+        </div>
+        <p id="configStatus" class="admin-status"></p>
+      </section>
+
+      <section class="admin-card">
+        <h2>2. Gerar novas perguntas (IA)</h2>
+        <p class="admin-hint">
+          Usa o Gemini para escrever novas perguntas. Requer o secret
+          <code>GEMINI_API_KEY</code> já configurado no repositório.
+        </p>
+
+        <label class="admin-label" for="categoryInput">Categoria</label>
+        <input id="categoryInput" class="admin-input" type="text" placeholder="Ex: Curiosidades científicas" />
+
+        <label class="admin-label" for="quantityInput">Quantidade</label>
+        <input id="quantityInput" class="admin-input" type="number" min="1" max="30" value="5" />
+
+        <label class="admin-checkbox">
+          <input id="audioTooCheckbox" type="checkbox" checked />
+          Já narrar as perguntas novas nesta mesma execução
+        </label>
+
+        <button id="generateQuestionsButton" class="admin-button" type="button">
+          🚀 Gerar perguntas
+        </button>
+        <p id="questionsStatus" class="admin-status"></p>
+      </section>
+
+      <section class="admin-card">
+        <h2>3. Gerar áudio</h2>
+        <p class="admin-hint">
+          Narra todas as perguntas que ainda não têm áudio (Kokoro TTS, local
+          e gratuito, roda no servidor do GitHub).
+        </p>
+
+        <label class="admin-checkbox">
+          <input id="forceAudioCheckbox" type="checkbox" />
+          Forçar regeneração (refaz até os áudios que já existem)
+        </label>
+
+        <button id="generateAudioButton" class="admin-button" type="button">
+          🔊 Gerar áudio
+        </button>
+        <p id="audioStatus" class="admin-status"></p>
+      </section>
+
+      <p class="admin-footer-note">
+        Cada ação aciona um workflow do GitHub Actions e roda na nuvem — pode
+        levar alguns minutos. Acompanhe o progresso na aba
+        <a id="actionsLink" href="#" target="_blank" rel="noopener">Actions do repositório</a>.
+      </p>
+
+      <footer class="admin-footer">
+        <a href="https://fvclares.github.io/curio-engine/" class="admin-link-app" target="_blank" rel="noopener">
+          🎮 Ir para o Curio Engine
+        </a>
+      </footer>
+      
+    </main>
+
+    <script type="module" src="./js/admin.js"></script>
+  </body>
+</html>
