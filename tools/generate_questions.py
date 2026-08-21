@@ -40,13 +40,20 @@ GEMINI_URL = (
     f"{GEMINI_MODEL}:generateContent"
 )
 
+# Limites de tamanho pensados para o card do quiz (tela cheia, fonte grande,
+# sem scroll). Se ficar maior que isso, o texto estoura o card — é por isso
+# que o prompt e a validação abaixo também cobram frases curtas e diretas.
+MAX_PROMPT_CHARS = 110
+MAX_ANSWER_CHARS = 28
+MAX_EXPLANATION_CHARS = 170
+
 RESPONSE_SCHEMA = {
     "type": "ARRAY",
     "items": {
         "type": "OBJECT",
         "properties": {
-            "prompt": {"type": "STRING"},
-            "explanation": {"type": "STRING"},
+            "prompt": {"type": "STRING", "maxLength": str(MAX_PROMPT_CHARS)},
+            "explanation": {"type": "STRING", "maxLength": str(MAX_EXPLANATION_CHARS)},
             "answers": {
                 "type": "ARRAY",
                 "minItems": 4,
@@ -54,7 +61,7 @@ RESPONSE_SCHEMA = {
                 "items": {
                     "type": "OBJECT",
                     "properties": {
-                        "text": {"type": "STRING"},
+                        "text": {"type": "STRING", "maxLength": str(MAX_ANSWER_CHARS)},
                         "isCorrect": {"type": "BOOLEAN"},
                     },
                     "required": ["text", "isCorrect"],
@@ -106,18 +113,40 @@ def save_questions(path: Path, questions: List[Dict[str, Any]]) -> None:
 
 def build_prompt(category: str, quantity: int, existing_prompts: List[str]) -> str:
     avoid = "\n".join(f"- {p}" for p in existing_prompts[-40:]) or "(nenhuma ainda)"
-    return f"""Você é um redator de quiz educativo em português do Brasil.
+    return f"""Você é um redator de quiz de CURIOSIDADES para redes sociais (estilo Reels/TikTok),
+em português do Brasil. O tom é leve, divertido e fácil de ler em 3 segundos — pense em
+"você sabia que..." e não em prova escolar ou aula de história da arte.
 
 Gere {quantity} perguntas de múltipla escolha NOVAS e ORIGINAIS sobre o tema: "{category}".
 
-Regras obrigatórias:
-- Cada pergunta tem exatamente 4 alternativas, sendo exatamente 1 correta.
-- As alternativas erradas devem ser plausíveis, não óbvias.
-- A explicação deve ter 1 a 3 frases, factual e didática.
-- Não repita nem parafraseie estas perguntas já existentes:
+O que TORNA uma boa pergunta aqui:
+- Um fato curioso, surpreendente, engraçado ou "uau" sobre o tema — recorde, número
+  estranho, origem inusitada, coincidência, comparação inesperada.
+- Linguagem simples, de conversa. Zero jargão técnico, zero termo acadêmico sem explicar.
+- Pergunta CURTA: uma frase só, direto ao ponto (até {MAX_PROMPT_CHARS} caracteres).
+
+O que EVITAR (motivo pelo qual perguntas antigas foram descartadas):
+- Perguntas técnicas ou de "livro didático": nomes de técnicas, estilos, correntes,
+  processos físicos/químicos detalhados, datas exatas decoradas, jargão de especialista.
+- Frases longas, com várias orações encaixadas ou explicações embutidas na própria pergunta.
+- Perguntas que soam como prova de vestibular em vez de curiosidade de feed.
+
+Formato de cada pergunta:
+- "prompt": a pergunta em si. UMA frase curta e direta, no máximo {MAX_PROMPT_CHARS}
+  caracteres. Ex: "Qual animal consegue dormir com um olho aberto?" em vez de
+  "Qual mecanismo neurológico permite que certas espécies mantenham vigília hemisférica?".
+- "answers": exatamente 4 alternativas, 1 correta. Cada alternativa é uma palavra ou
+  frase bem curta (no máximo {MAX_ANSWER_CHARS} caracteres) — nada de frases completas
+  como resposta. As erradas devem ser plausíveis e do mesmo "tamanho" da certa, sem ser óbvias.
+- "explanation": 1 a 2 frases CURTAS (no máximo {MAX_EXPLANATION_CHARS} caracteres no total),
+  contando o fato curioso de um jeito animado, tipo comentando com um amigo — não uma
+  explicação técnica de como/por que algo funciona.
+
+Não repita nem parafraseie estas perguntas já existentes:
 {avoid}
-- Nada de opinião, política controversa ou conteúdo sensível.
-- Responda em português do Brasil.
+
+Nada de opinião, política controversa ou conteúdo sensível.
+Responda em português do Brasil.
 """
 
 
@@ -159,7 +188,37 @@ def validate_question(raw: Dict[str, Any]) -> bool:
         return False
     if not raw.get("prompt") or not raw.get("explanation"):
         return False
+
+    # Segunda barreira contra texto grande demais para o card, caso o
+    # modelo ignore o maxLength do schema.
+    if len(raw["prompt"]) > MAX_PROMPT_CHARS:
+        return False
+    if len(raw["explanation"]) > MAX_EXPLANATION_CHARS:
+        return False
+    if any(len(a.get("text", "")) > MAX_ANSWER_CHARS for a in answers):
+        return False
+
     return True
+
+
+def describe_validation_failure(raw: Dict[str, Any]) -> str:
+    """Explica por que uma pergunta foi descartada, pra facilitar o debug no log do Actions."""
+    answers = raw.get("answers", [])
+    if len(answers) != 4:
+        return f"tem {len(answers)} alternativas, precisa ser 4"
+    correct = [a for a in answers if a.get("isCorrect")]
+    if len(correct) != 1:
+        return f"tem {len(correct)} alternativas corretas, precisa ser exatamente 1"
+    if not raw.get("prompt") or not raw.get("explanation"):
+        return "faltando prompt ou explanation"
+    if len(raw.get("prompt", "")) > MAX_PROMPT_CHARS:
+        return f"pergunta muito longa ({len(raw['prompt'])} > {MAX_PROMPT_CHARS} caracteres)"
+    if len(raw.get("explanation", "")) > MAX_EXPLANATION_CHARS:
+        return f"explicação muito longa ({len(raw['explanation'])} > {MAX_EXPLANATION_CHARS} caracteres)"
+    long_answer = next((a for a in answers if len(a.get("text", "")) > MAX_ANSWER_CHARS), None)
+    if long_answer:
+        return f"alternativa muito longa ({len(long_answer.get('text', ''))} > {MAX_ANSWER_CHARS} caracteres)"
+    return "formato inválido"
 
 
 def main() -> int:
@@ -186,7 +245,8 @@ def main() -> int:
 
     for raw in raw_questions:
         if not validate_question(raw):
-            print(f"  ⚠️  Pergunta descartada (formato inválido): {raw.get('prompt', '???')[:60]}")
+            reason = describe_validation_failure(raw)
+            print(f"  ⚠️  Pergunta descartada ({reason}): {raw.get('prompt', '???')[:60]}")
             continue
 
         base_id = f"{slugify(args.category)}-{slugify(raw['prompt'])}"
