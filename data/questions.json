@@ -1,137 +1,137 @@
 [
   {
-    "id": "artes-o-que-aconteceu-em-1911-para-a-mona-lisa",
+    "id": "artes-o-que-pablo-picasso-carregava-no-bolso-p",
     "category": "Artes",
-    "prompt": "O que aconteceu em 1911 para a Mona Lisa virar o quadro mais famoso do mundo?",
+    "prompt": "O que Pablo Picasso carregava no bolso para disparar em quem fazia perguntas chatas?",
     "answers": [
       {
-        "text": "Ela foi roubada do museu",
+        "text": "Arma de festim",
         "isCorrect": true
       },
       {
-        "text": "Ela foi pintada de novo",
+        "text": "Borrifador de tinta",
         "isCorrect": false
       },
       {
-        "text": "Descobriram ouro nela",
+        "text": "Apito de barulho",
         "isCorrect": false
       },
       {
-        "text": "O Papa comprou a obra",
+        "text": "Buzina de ar",
         "isCorrect": false
       }
     ],
-    "explanation": "A Mona Lisa nem era a mais famosa do Louvre até ser roubada por um funcionário em 1911! O mistério virou notícia no mundo todo.",
-    "questionAudio": "assets/audio/artes-o-que-aconteceu-em-1911-para-a-mona-lisa-question.wav",
-    "answerAudio": "assets/audio/artes-o-que-aconteceu-em-1911-para-a-mona-lisa-answer.wav",
-    "explanationAudio": "assets/audio/artes-o-que-aconteceu-em-1911-para-a-mona-lisa-explanation.wav"
+    "explanation": "Picasso andava com um revólver com munição de festim e disparava em quem perguntava o significado da sua arte!",
+    "questionAudio": "assets/audio/artes-o-que-pablo-picasso-carregava-no-bolso-p-question.wav",
+    "answerAudio": "assets/audio/artes-o-que-pablo-picasso-carregava-no-bolso-p-answer.wav",
+    "explanationAudio": "assets/audio/artes-o-que-pablo-picasso-carregava-no-bolso-p-explanation.wav"
   },
   {
-    "id": "artes-qual-marca-de-doces-teve-o-logotipo-cria",
+    "id": "artes-em-qual-periodo-as-olimpiadas-entregaram",
     "category": "Artes",
-    "prompt": "Qual marca de doces teve o logotipo criado pelo famoso pintor Salvador Dalí?",
+    "prompt": "Em qual período as Olimpíadas entregaram medalhas de ouro para obras de arte?",
     "answers": [
       {
-        "text": "Chupa Chups",
+        "text": "De 1912 a 1948",
         "isCorrect": true
       },
       {
-        "text": "Kinder Ovo",
+        "text": "De 1896 a 1908",
         "isCorrect": false
       },
       {
-        "text": "M&M's",
+        "text": "De 1952 a 1968",
         "isCorrect": false
       },
       {
-        "text": "Tic Tac",
+        "text": "De 1972 a 1988",
         "isCorrect": false
       }
     ],
-    "explanation": "Em 1969, Dalí desenhou a famosa margarida amarela da Chupa Chups em um guardanapo de café e deu a ideia de colocar o logo no topo!",
-    "questionAudio": "assets/audio/artes-qual-marca-de-doces-teve-o-logotipo-cria-question.wav",
-    "answerAudio": "assets/audio/artes-qual-marca-de-doces-teve-o-logotipo-cria-answer.wav",
-    "explanationAudio": "assets/audio/artes-qual-marca-de-doces-teve-o-logotipo-cria-explanation.wav"
+    "explanation": "Nas Olimpíadas antigas modernas, artistas competiam e ganhavam medalhas de verdade em pintura, escultura e música!",
+    "questionAudio": "assets/audio/artes-em-qual-periodo-as-olimpiadas-entregaram-question.wav",
+    "answerAudio": "assets/audio/artes-em-qual-periodo-as-olimpiadas-entregaram-answer.wav",
+    "explanationAudio": "assets/audio/artes-em-qual-periodo-as-olimpiadas-entregaram-explanation.wav"
   },
   {
-    "id": "artes-quantos-quadros-o-famoso-pintor-vincent-",
+    "id": "artes-por-que-leonardo-da-vinci-escrevia-quase",
     "category": "Artes",
-    "prompt": "Quantos quadros o famoso pintor Vincent van Gogh vendeu durante toda a sua vida?",
+    "prompt": "Por que Leonardo da Vinci escrevia quase todas as suas notas espelhadas, da direita para a esquerda?",
     "answers": [
       {
-        "text": "Apenas 1 quadro",
+        "text": "Ele era canhoto",
         "isCorrect": true
       },
       {
-        "text": "Nenhum quadro",
+        "text": "Para ocultar segredos",
         "isCorrect": false
       },
       {
-        "text": "Cerca de 50 quadros",
+        "text": "Era um hábito italiano",
         "isCorrect": false
       },
       {
-        "text": "Mais de 500 quadros",
+        "text": "Tinha visão trocada",
         "isCorrect": false
       }
     ],
-    "explanation": "Apesar de ter criado mais de 2.000 obras de arte, Van Gogh só conseguiu vender uma única pintura enquanto estava vivo!",
-    "questionAudio": "assets/audio/artes-quantos-quadros-o-famoso-pintor-vincent--question.wav",
-    "answerAudio": "assets/audio/artes-quantos-quadros-o-famoso-pintor-vincent--answer.wav",
-    "explanationAudio": "assets/audio/artes-quantos-quadros-o-famoso-pintor-vincent--explanation.wav"
+    "explanation": "Como era canhoto, escrever da direita para a esquerda impedia que sua mão borrasse a tinta fresca no papel!",
+    "questionAudio": "assets/audio/artes-por-que-leonardo-da-vinci-escrevia-quase-question.wav",
+    "answerAudio": "assets/audio/artes-por-que-leonardo-da-vinci-escrevia-quase-answer.wav",
+    "explanationAudio": "assets/audio/artes-por-que-leonardo-da-vinci-escrevia-quase-explanation.wav"
   },
   {
-    "id": "artes-de-onde-veio-o-bloco-de-marmore-que-mich",
+    "id": "artes-do-que-era-feita-a-famosa-tinta-marrom-m",
     "category": "Artes",
-    "prompt": "De onde veio o bloco de mármore que Michelangelo usou para esculpir o Davi?",
+    "prompt": "Do que era feita a famosa tinta 'marrom múmia', muito usada por pintores no século 19?",
     "answers": [
       {
-        "text": "Foi rejeitado por outros",
+        "text": "Múmias de verdade",
         "isCorrect": true
       },
       {
-        "text": "Veio de um templo grego",
+        "text": "Cascas de nozes",
         "isCorrect": false
       },
       {
-        "text": "Foi tirado do fundo do mar",
+        "text": "Lama do Rio Nilo",
         "isCorrect": false
       },
       {
-        "text": "Veio de um presente real",
+        "text": "Sementes queimadas",
         "isCorrect": false
       }
     ],
-    "explanation": "O bloco ficou abandonado por 40 anos porque outros artistas acharam a pedra cheia de defeitos, até Michelangelo aceitar o desafio!",
-    "questionAudio": "assets/audio/artes-de-onde-veio-o-bloco-de-marmore-que-mich-question.wav",
-    "answerAudio": "assets/audio/artes-de-onde-veio-o-bloco-de-marmore-que-mich-answer.wav",
-    "explanationAudio": "assets/audio/artes-de-onde-veio-o-bloco-de-marmore-que-mich-explanation.wav"
+    "explanation": "Pode acreditar: o pigmento era feito moendo múmias egípcias reais! A tinta só parou de ser vendida nos anos 1960.",
+    "questionAudio": "assets/audio/artes-do-que-era-feita-a-famosa-tinta-marrom-m-question.wav",
+    "answerAudio": "assets/audio/artes-do-que-era-feita-a-famosa-tinta-marrom-m-answer.wav",
+    "explanationAudio": "assets/audio/artes-do-que-era-feita-a-famosa-tinta-marrom-m-explanation.wav"
   },
   {
-    "id": "artes-o-que-a-pintura-do-artista-banksy-fez-as",
+    "id": "artes-qual-objeto-curioso-de-banheiro-o-artist",
     "category": "Artes",
-    "prompt": "O que a pintura do artista Banksy fez assim que foi vendida em um leilão milionário?",
+    "prompt": "Qual objeto curioso de banheiro o artista Marcel Duchamp assinou e colocou em um museu?",
     "answers": [
       {
-        "text": "Se picotou sozinha",
+        "text": "Um mictório",
         "isCorrect": true
       },
       {
-        "text": "Pegou fogo ao vivo",
+        "text": "Um vaso sanitário",
         "isCorrect": false
       },
       {
-        "text": "Tocou uma música",
+        "text": "Uma saboneteira",
         "isCorrect": false
       },
       {
-        "text": "Explodiu em tinta",
+        "text": "Uma escova de dentes",
         "isCorrect": false
       }
     ],
-    "explanation": "Banksy escondeu um triturador de papel na moldura. Assim que o martelo do leilão bateu, a obra começou a se picotar ao vivo!",
-    "questionAudio": "assets/audio/artes-o-que-a-pintura-do-artista-banksy-fez-as-question.wav",
-    "answerAudio": "assets/audio/artes-o-que-a-pintura-do-artista-banksy-fez-as-answer.wav",
-    "explanationAudio": "assets/audio/artes-o-que-a-pintura-do-artista-banksy-fez-as-explanation.wav"
+    "explanation": "Ele comprou um mictório comum, assinou como 'R. Mutt' e batizou a obra de 'A Fonte', mudando a história da arte!",
+    "questionAudio": "assets/audio/artes-qual-objeto-curioso-de-banheiro-o-artist-question.wav",
+    "answerAudio": "assets/audio/artes-qual-objeto-curioso-de-banheiro-o-artist-answer.wav",
+    "explanationAudio": "assets/audio/artes-qual-objeto-curioso-de-banheiro-o-artist-explanation.wav"
   }
 ]
