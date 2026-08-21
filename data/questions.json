@@ -1,137 +1,137 @@
 [
   {
-    "id": "artes-qual-tecnica-de-pintura-foi-amplamente-d",
+    "id": "artes-o-que-aconteceu-em-1911-para-a-mona-lisa",
     "category": "Artes",
-    "prompt": "Qual técnica de pintura foi amplamente desenvolvida pelos impressionistas franceses no final do século XIX para capturar as variações rápidas da luz solar diretamente ao ar livre?",
+    "prompt": "O que aconteceu em 1911 para a Mona Lisa virar o quadro mais famoso do mundo?",
     "answers": [
       {
-        "text": "Pintura en plein air",
+        "text": "Ela foi roubada do museu",
         "isCorrect": true
       },
       {
-        "text": "Pintura mural em afresco",
+        "text": "Ela foi pintada de novo",
         "isCorrect": false
       },
       {
-        "text": "Encáustica sobre madeira",
+        "text": "Descobriram ouro nela",
         "isCorrect": false
       },
       {
-        "text": "Grisaille monocromática",
+        "text": "O Papa comprou a obra",
         "isCorrect": false
       }
     ],
-    "explanation": "A pintura en plein air (ao ar livre) permitia aos impressionistas registrar as transformações da luz natural e da atmosfera no momento exato em que ocorriam. Essa prática foi viabilizada pelo surgimento das tintas a óleo em tubos dobráveis de metal.",
-    "questionAudio": "assets/audio/artes-qual-tecnica-de-pintura-foi-amplamente-d-question.wav",
-    "answerAudio": "assets/audio/artes-qual-tecnica-de-pintura-foi-amplamente-d-answer.wav",
-    "explanationAudio": "assets/audio/artes-qual-tecnica-de-pintura-foi-amplamente-d-explanation.wav"
+    "explanation": "A Mona Lisa nem era a mais famosa do Louvre até ser roubada por um funcionário em 1911! O mistério virou notícia no mundo todo.",
+    "questionAudio": "assets/audio/artes-o-que-aconteceu-em-1911-para-a-mona-lisa-question.wav",
+    "answerAudio": "assets/audio/artes-o-que-aconteceu-em-1911-para-a-mona-lisa-answer.wav",
+    "explanationAudio": "assets/audio/artes-o-que-aconteceu-em-1911-para-a-mona-lisa-explanation.wav"
   },
   {
-    "id": "artes-qual-famosa-escultura-de-gian-lorenzo-be",
+    "id": "artes-qual-marca-de-doces-teve-o-logotipo-cria",
     "category": "Artes",
-    "prompt": "Qual famosa escultura de Gian Lorenzo Bernini, localizada na Igreja de Santa Maria della Vittoria em Roma, sintetiza o drama barroco ao representar um momento de experiência espiritual intensa?",
+    "prompt": "Qual marca de doces teve o logotipo criado pelo famoso pintor Salvador Dalí?",
     "answers": [
       {
-        "text": "O Êxtase de Santa Teresa",
+        "text": "Chupa Chups",
         "isCorrect": true
       },
       {
-        "text": "O Pensador",
+        "text": "Kinder Ovo",
         "isCorrect": false
       },
       {
-        "text": "Moisés",
+        "text": "M&M's",
         "isCorrect": false
       },
       {
-        "text": "Vênus de Milo",
+        "text": "Tic Tac",
         "isCorrect": false
       }
     ],
-    "explanation": "O Êxtase de Santa Teresa é uma das obras-primas da escultura barroca, criada por Gian Lorenzo Bernini no século XVII. A obra combina arquitetura, iluminação natural e escultura para dramatizar a experiência mística da santa.",
-    "questionAudio": "assets/audio/artes-qual-famosa-escultura-de-gian-lorenzo-be-question.wav",
-    "answerAudio": "assets/audio/artes-qual-famosa-escultura-de-gian-lorenzo-be-answer.wav",
-    "explanationAudio": "assets/audio/artes-qual-famosa-escultura-de-gian-lorenzo-be-explanation.wav"
+    "explanation": "Em 1969, Dalí desenhou a famosa margarida amarela da Chupa Chups em um guardanapo de café e deu a ideia de colocar o logo no topo!",
+    "questionAudio": "assets/audio/artes-qual-marca-de-doces-teve-o-logotipo-cria-question.wav",
+    "answerAudio": "assets/audio/artes-qual-marca-de-doces-teve-o-logotipo-cria-answer.wav",
+    "explanationAudio": "assets/audio/artes-qual-marca-de-doces-teve-o-logotipo-cria-explanation.wav"
   },
   {
-    "id": "artes-qual-artista-mexicana-e-mundialmente-rec",
+    "id": "artes-quantos-quadros-o-famoso-pintor-vincent-",
     "category": "Artes",
-    "prompt": "Qual artista mexicana é mundialmente reconhecida por seus autorretratos intensos que misturam elementos da cultura popular do seu país com simbolismos de suas dores físicas e emocionais?",
+    "prompt": "Quantos quadros o famoso pintor Vincent van Gogh vendeu durante toda a sua vida?",
     "answers": [
       {
-        "text": "Frida Kahlo",
+        "text": "Apenas 1 quadro",
         "isCorrect": true
       },
       {
-        "text": "Remedios Varo",
+        "text": "Nenhum quadro",
         "isCorrect": false
       },
       {
-        "text": "Leonora Carrington",
+        "text": "Cerca de 50 quadros",
         "isCorrect": false
       },
       {
-        "text": "Maria Martins",
+        "text": "Mais de 500 quadros",
         "isCorrect": false
       }
     ],
-    "explanation": "Frida Kahlo produziu dezenas de autorretratos carregados de simbolismo, expressando sua identidade mexicana, traumas de acidentes e dores pessoais. Embora frequentemente associada ao surrealismo, a própria artista afirmava que pintava a sua própria realidade.",
-    "questionAudio": "assets/audio/artes-qual-artista-mexicana-e-mundialmente-rec-question.wav",
-    "answerAudio": "assets/audio/artes-qual-artista-mexicana-e-mundialmente-rec-answer.wav",
-    "explanationAudio": "assets/audio/artes-qual-artista-mexicana-e-mundialmente-rec-explanation.wav"
+    "explanation": "Apesar de ter criado mais de 2.000 obras de arte, Van Gogh só conseguiu vender uma única pintura enquanto estava vivo!",
+    "questionAudio": "assets/audio/artes-quantos-quadros-o-famoso-pintor-vincent--question.wav",
+    "answerAudio": "assets/audio/artes-quantos-quadros-o-famoso-pintor-vincent--answer.wav",
+    "explanationAudio": "assets/audio/artes-quantos-quadros-o-famoso-pintor-vincent--explanation.wav"
   },
   {
-    "id": "artes-qual-movimento-artistico-dos-anos-1950-e",
+    "id": "artes-de-onde-veio-o-bloco-de-marmore-que-mich",
     "category": "Artes",
-    "prompt": "Qual movimento artístico dos anos 1950 e 1960 utilizava elementos do consumismo, da publicidade e dos quadrinhos para questionar os limites entre a arte erudita e a cultura de massa?",
+    "prompt": "De onde veio o bloco de mármore que Michelangelo usou para esculpir o Davi?",
     "answers": [
       {
-        "text": "Pop Art",
+        "text": "Foi rejeitado por outros",
         "isCorrect": true
       },
       {
-        "text": "Cubismo",
+        "text": "Veio de um templo grego",
         "isCorrect": false
       },
       {
-        "text": "Dadaísmo",
+        "text": "Foi tirado do fundo do mar",
         "isCorrect": false
       },
       {
-        "text": "Simbolismo",
+        "text": "Veio de um presente real",
         "isCorrect": false
       }
     ],
-    "explanation": "A Pop Art emergiu como uma reação ao expressionismo abstrato, incorporando imagens de marcas populares, embalagens e ícones da mídia. Artistas como Andy Warhol e Roy Lichtenstein foram expoentes dessa corrente que utilizava a reprodução mecânica.",
-    "questionAudio": "assets/audio/artes-qual-movimento-artistico-dos-anos-1950-e-question.wav",
-    "answerAudio": "assets/audio/artes-qual-movimento-artistico-dos-anos-1950-e-answer.wav",
-    "explanationAudio": "assets/audio/artes-qual-movimento-artistico-dos-anos-1950-e-explanation.wav"
+    "explanation": "O bloco ficou abandonado por 40 anos porque outros artistas acharam a pedra cheia de defeitos, até Michelangelo aceitar o desafio!",
+    "questionAudio": "assets/audio/artes-de-onde-veio-o-bloco-de-marmore-que-mich-question.wav",
+    "answerAudio": "assets/audio/artes-de-onde-veio-o-bloco-de-marmore-que-mich-answer.wav",
+    "explanationAudio": "assets/audio/artes-de-onde-veio-o-bloco-de-marmore-que-mich-explanation.wav"
   },
   {
-    "id": "artes-qual-tecnica-pictorica-desenvolvida-no-r",
+    "id": "artes-o-que-a-pintura-do-artista-banksy-fez-as",
     "category": "Artes",
-    "prompt": "Qual técnica pictórica desenvolvida no Renascimento por Leonardo da Vinci consiste em criar transições suavizadas entre luz e sombra, eliminando contornos rígidos e produzindo um efeito esfumaçado?",
+    "prompt": "O que a pintura do artista Banksy fez assim que foi vendida em um leilão milionário?",
     "answers": [
       {
-        "text": "Sfumato",
+        "text": "Se picotou sozinha",
         "isCorrect": true
       },
       {
-        "text": "Impasto",
+        "text": "Pegou fogo ao vivo",
         "isCorrect": false
       },
       {
-        "text": "Pontilhismo",
+        "text": "Tocou uma música",
         "isCorrect": false
       },
       {
-        "text": "Colagem",
+        "text": "Explodiu em tinta",
         "isCorrect": false
       }
     ],
-    "explanation": "O sfumato, cujo termo deriva da palavra italiana para fumaça, é a aplicação de várias camadas finas e transparentes de tinta para borrar as linhas de contorno. Leonardo da Vinci usou essa técnica com maestria para criar o olhar e o sorriso enigmáticos da Mona Lisa.",
-    "questionAudio": "assets/audio/artes-qual-tecnica-pictorica-desenvolvida-no-r-question.wav",
-    "answerAudio": "assets/audio/artes-qual-tecnica-pictorica-desenvolvida-no-r-answer.wav",
-    "explanationAudio": "assets/audio/artes-qual-tecnica-pictorica-desenvolvida-no-r-explanation.wav"
+    "explanation": "Banksy escondeu um triturador de papel na moldura. Assim que o martelo do leilão bateu, a obra começou a se picotar ao vivo!",
+    "questionAudio": "assets/audio/artes-o-que-a-pintura-do-artista-banksy-fez-as-question.wav",
+    "answerAudio": "assets/audio/artes-o-que-a-pintura-do-artista-banksy-fez-as-answer.wav",
+    "explanationAudio": "assets/audio/artes-o-que-a-pintura-do-artista-banksy-fez-as-explanation.wav"
   }
 ]
