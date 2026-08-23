@@ -21,6 +21,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   gerar-perguntas:
@@ -55,7 +56,20 @@ jobs:
         run: python tools/generate_audio.py
 
       - name: Commitar perguntas e áudios novos
+        id: commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: gera novas perguntas via IA (${{ inputs.categoria }})"
           file_pattern: "data/questions.json data/history.json assets/audio/**"
+
+      # IMPORTANTE: um push feito com o GITHUB_TOKEN padrão (como o que o
+      # git-auto-commit-action acabou de fazer) NÃO dispara automaticamente
+      # outros workflows que escutam "on: push" — é uma proteção do GitHub
+      # contra loops infinitos. Por isso o deploy-pages.yml nunca rodava
+      # sozinho depois de gerar perguntas novas, e o site continuava
+      # mostrando o conteúdo antigo. Aqui disparamos ele explicitamente.
+      - name: Disparar publicação no GitHub Pages
+        if: steps.commit.outputs.changes_detected == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-pages.yml --ref ${{ github.ref_name }}
