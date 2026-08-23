@@ -1,137 +1,137 @@
 [
   {
-    "id": "animais-qual-destes-animais-faz-coco-em-formato-",
-    "category": "Animais",
-    "prompt": "Qual destes animais faz cocô em formato de cubo perfeito?",
+    "id": "artes-o-que-o-pintor-salvador-dali-segurava-na",
+    "category": "Artes",
+    "prompt": "O que o pintor Salvador Dalí segurava nas mãos para ter ideias incríveis de arte?",
     "answers": [
       {
-        "text": "Wombat",
+        "text": "Uma colher de metal",
         "isCorrect": true
       },
       {
-        "text": "Coala",
+        "text": "Um copo com água",
         "isCorrect": false
       },
       {
-        "text": "Canguru",
+        "text": "Uma pena de ganso",
         "isCorrect": false
       },
       {
-        "text": "Diabo-da-tasmânia",
+        "text": "Um relógio de bolso",
         "isCorrect": false
       }
     ],
-    "explanation": "O wombat é o único animal que faz cocô em formato de cubo! Isso impede que as fezes rolem das pedras onde eles marcam território.",
-    "questionAudio": "assets/audio/animais-qual-destes-animais-faz-coco-em-formato--question.wav",
-    "answerAudio": "assets/audio/animais-qual-destes-animais-faz-coco-em-formato--answer.wav",
-    "explanationAudio": "assets/audio/animais-qual-destes-animais-faz-coco-em-formato--explanation.wav"
+    "explanation": "Quando a colher caía e fazia barulho, ele acordava e desenhava na hora os sonhos bizarríssimos que tinha!",
+    "questionAudio": "assets/audio/artes-o-que-o-pintor-salvador-dali-segurava-na-question.wav",
+    "answerAudio": "assets/audio/artes-o-que-o-pintor-salvador-dali-segurava-na-answer.wav",
+    "explanationAudio": "assets/audio/artes-o-que-o-pintor-salvador-dali-segurava-na-explanation.wav"
   },
   {
-    "id": "animais-qual-animal-segura-a-pata-do-outro-enqua",
-    "category": "Animais",
-    "prompt": "Qual animal segura a pata do outro enquanto dorme para não se perder na água?",
+    "id": "artes-qual-artista-famoso-ja-foi-preso-como-su",
+    "category": "Artes",
+    "prompt": "Qual artista famoso já foi preso como suspeito do roubo da Mona Lisa em 1911?",
     "answers": [
       {
-        "text": "Nutria de água",
-        "isCorrect": false
-      },
-      {
-        "text": "Lontra-marinha",
+        "text": "Pablo Picasso",
         "isCorrect": true
       },
       {
-        "text": "Castor",
+        "text": "Vincent van Gogh",
         "isCorrect": false
       },
       {
-        "text": "Foca-cinzenta",
+        "text": "Claude Monet",
+        "isCorrect": false
+      },
+      {
+        "text": "Andy Warhol",
         "isCorrect": false
       }
     ],
-    "explanation": "As lontras-marinhas dão as mãos enquanto dormem na superfície para a correnteza não separá-las. Muito fofo!",
-    "questionAudio": "assets/audio/animais-qual-animal-segura-a-pata-do-outro-enqua-question.wav",
-    "answerAudio": "assets/audio/animais-qual-animal-segura-a-pata-do-outro-enqua-answer.wav",
-    "explanationAudio": "assets/audio/animais-qual-animal-segura-a-pata-do-outro-enqua-explanation.wav"
+    "explanation": "Picasso foi levado pela polícia para depor como suspeito, mas no fim provou que não tinha nada a ver com o crime!",
+    "questionAudio": "assets/audio/artes-qual-artista-famoso-ja-foi-preso-como-su-question.wav",
+    "answerAudio": "assets/audio/artes-qual-artista-famoso-ja-foi-preso-como-su-answer.wav",
+    "explanationAudio": "assets/audio/artes-qual-artista-famoso-ja-foi-preso-como-su-explanation.wav"
   },
   {
-    "id": "animais-por-que-os-flamingos-nascem-cinzas-e-fic",
-    "category": "Animais",
-    "prompt": "Por que os flamingos nascem cinzas e ficam rosa depois de adultos?",
+    "id": "artes-michelangelo-escreveu-um-poema-reclamand",
+    "category": "Artes",
+    "prompt": "Michelangelo escreveu um poema reclamando muito de ter que pintar qual destas obras?",
     "answers": [
       {
-        "text": "Por causa da iluminação",
-        "isCorrect": false
-      },
-      {
-        "text": "Pela alimentação",
+        "text": "Teto da Capela Sistina",
         "isCorrect": true
       },
       {
-        "text": "Mudança de clima",
+        "text": "Paredes do Coliseu",
         "isCorrect": false
       },
       {
-        "text": "Por troca de penas",
+        "text": "A Última Ceia",
+        "isCorrect": false
+      },
+      {
+        "text": "Cúpula do Vaticano",
         "isCorrect": false
       }
     ],
-    "explanation": "Eles ficam rosa por causa da pigmentação dos camarões e algas que comem. Se mudarem a dieta, voltam a ficar brancos!",
-    "questionAudio": "assets/audio/animais-por-que-os-flamingos-nascem-cinzas-e-fic-question.wav",
-    "answerAudio": "assets/audio/animais-por-que-os-flamingos-nascem-cinzas-e-fic-answer.wav",
-    "explanationAudio": "assets/audio/animais-por-que-os-flamingos-nascem-cinzas-e-fic-explanation.wav"
+    "explanation": "Ele se considerava apenas escultor e odiava pintar! Ele reclamou bastante das dores nas costas durante o trabalho.",
+    "questionAudio": "assets/audio/artes-michelangelo-escreveu-um-poema-reclamand-question.wav",
+    "answerAudio": "assets/audio/artes-michelangelo-escreveu-um-poema-reclamand-answer.wav",
+    "explanationAudio": "assets/audio/artes-michelangelo-escreveu-um-poema-reclamand-explanation.wav"
   },
   {
-    "id": "animais-qual-destes-animais-consegue-segurar-o-f",
-    "category": "Animais",
-    "prompt": "Qual destes animais consegue segurar o fôlego embaixo d'água por mais tempo?",
+    "id": "artes-quantos-quadros-o-pintor-vincent-van-gog",
+    "category": "Artes",
+    "prompt": "Quantos quadros o pintor Vincent van Gogh conseguiu vender durante toda a sua vida?",
     "answers": [
       {
-        "text": "Golfinho",
-        "isCorrect": false
-      },
-      {
-        "text": "Bicho-preguiça",
+        "text": "Apenas 1 quadro",
         "isCorrect": true
       },
       {
-        "text": "Castor",
+        "text": "Cerca de 50 quadros",
         "isCorrect": false
       },
       {
-        "text": "Lontra",
+        "text": "Mais de 200 quadros",
+        "isCorrect": false
+      },
+      {
+        "text": "Nenhum quadro",
         "isCorrect": false
       }
     ],
-    "explanation": "Diminuindo os batimentos do coração, o bicho-preguiça consegue ficar até 40 minutos debaixo d'água, superando os golfinhos!",
-    "questionAudio": "assets/audio/animais-qual-destes-animais-consegue-segurar-o-f-question.wav",
-    "answerAudio": "assets/audio/animais-qual-destes-animais-consegue-segurar-o-f-answer.wav",
-    "explanationAudio": "assets/audio/animais-qual-destes-animais-consegue-segurar-o-f-explanation.wav"
+    "explanation": "Hoje ele é um gigante da arte, mas em vida só vendeu a tela 'A Vinha Encarnada' para a irmã de um amigo seu!",
+    "questionAudio": "assets/audio/artes-quantos-quadros-o-pintor-vincent-van-gog-question.wav",
+    "answerAudio": "assets/audio/artes-quantos-quadros-o-pintor-vincent-van-gog-answer.wav",
+    "explanationAudio": "assets/audio/artes-quantos-quadros-o-pintor-vincent-van-gog-explanation.wav"
   },
   {
-    "id": "animais-qual-destes-animais-costuma-ter-um-melho",
-    "category": "Animais",
-    "prompt": "Qual destes animais costuma ter um melhor amigo e fica estressado longe dele?",
+    "id": "artes-de-onde-vinha-o-pigmento-de-uma-tinta-ma",
+    "category": "Artes",
+    "prompt": "De onde vinha o pigmento de uma tinta marrom muito famosa usada por artistas no século 19?",
     "answers": [
       {
-        "text": "Vaca",
+        "text": "Múmias de verdade",
         "isCorrect": true
       },
       {
-        "text": "Cavalo",
+        "text": "Cascas de besouro",
         "isCorrect": false
       },
       {
-        "text": "Ovelha",
+        "text": "Cinzas de vulcão",
         "isCorrect": false
       },
       {
-        "text": "Gato",
+        "text": "Sementes de cacau",
         "isCorrect": false
       }
     ],
-    "explanation": "Estudos mostram que as vacas criam laços fortes de amizade e ficam super estressadas quando são separadas da sua melhor amiga!",
-    "questionAudio": "assets/audio/animais-qual-destes-animais-costuma-ter-um-melho-question.wav",
-    "answerAudio": "assets/audio/animais-qual-destes-animais-costuma-ter-um-melho-answer.wav",
-    "explanationAudio": "assets/audio/animais-qual-destes-animais-costuma-ter-um-melho-explanation.wav"
+    "explanation": "A tinta 'marrom-múmia' usava restos de múmias egípcias moídas! Ela só parou de ser feita quando as múmias acabaram.",
+    "questionAudio": "assets/audio/artes-de-onde-vinha-o-pigmento-de-uma-tinta-ma-question.wav",
+    "answerAudio": "assets/audio/artes-de-onde-vinha-o-pigmento-de-uma-tinta-ma-answer.wav",
+    "explanationAudio": "assets/audio/artes-de-onde-vinha-o-pigmento-de-uma-tinta-ma-explanation.wav"
   }
 ]
