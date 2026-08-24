@@ -1,137 +1,137 @@
 [
   {
-    "id": "fisica-se-a-fisica-nao-ajustasse-os-relogios-do",
-    "category": "Física",
-    "prompt": "Se a física não ajustasse os relógios dos satélites, o GPS erraria sua posição por quanto ao dia?",
+    "id": "musica-qual-foi-a-primeira-musica-tocada-no-esp",
+    "category": "Musica",
+    "prompt": "Qual foi a primeira música tocada no espaço por astronautas da NASA?",
     "answers": [
       {
-        "text": "~10 quilômetros",
+        "text": "Jingle Bells",
         "isCorrect": true
       },
       {
-        "text": "~50 metros",
+        "text": "Parabéns pra Você",
         "isCorrect": false
       },
       {
-        "text": "~500 quilômetros",
+        "text": "Fly Me to the Moon",
         "isCorrect": false
       },
       {
-        "text": "~100 metros",
+        "text": "Imagine",
         "isCorrect": false
       }
     ],
-    "explanation": "A gravidade faz o tempo passar mais rápido no espaço! Sem o ajuste da relatividade, o GPS errava 10 km por dia.",
-    "questionAudio": "assets/audio/fisica-se-a-fisica-nao-ajustasse-os-relogios-do-question.wav",
-    "answerAudio": "assets/audio/fisica-se-a-fisica-nao-ajustasse-os-relogios-do-answer.wav",
-    "explanationAudio": "assets/audio/fisica-se-a-fisica-nao-ajustasse-os-relogios-do-explanation.wav"
+    "explanation": "Em 1965, os astronautas da missão Gemini 6 tocaram Jingle Bells usando uma gaita escondida e guizos!",
+    "questionAudio": "assets/audio/musica-qual-foi-a-primeira-musica-tocada-no-esp-question.wav",
+    "answerAudio": "assets/audio/musica-qual-foi-a-primeira-musica-tocada-no-esp-answer.wav",
+    "explanationAudio": "assets/audio/musica-qual-foi-a-primeira-musica-tocada-no-esp-explanation.wav"
   },
   {
-    "id": "fisica-qual-destas-frutas-do-dia-a-dia-e-natura",
-    "category": "Física",
-    "prompt": "Qual destas frutas do dia a dia é naturalmente um pouquinho radioativa por causa da física?",
+    "id": "musica-estudos-mostram-que-vacas-produzem-mais-",
+    "category": "Musica",
+    "prompt": "Estudos mostram que vacas produzem mais leite quando ouvem qual tipo de música?",
     "answers": [
       {
-        "text": "Banana",
+        "text": "Música calma",
         "isCorrect": true
       },
       {
-        "text": "Maçã",
+        "text": "Rock pesado",
         "isCorrect": false
       },
       {
-        "text": "Morango",
+        "text": "Pop animado",
         "isCorrect": false
       },
       {
-        "text": "Melancia",
+        "text": "Eletrônica",
         "isCorrect": false
       }
     ],
-    "explanation": "Bananas têm potássio-40, um átomo radioativo! Mas fique tranquilo: você precisaria comer 10 milhões de uma vez para fazer mal.",
-    "questionAudio": "assets/audio/fisica-qual-destas-frutas-do-dia-a-dia-e-natura-question.wav",
-    "answerAudio": "assets/audio/fisica-qual-destas-frutas-do-dia-a-dia-e-natura-answer.wav",
-    "explanationAudio": "assets/audio/fisica-qual-destas-frutas-do-dia-a-dia-e-natura-explanation.wav"
+    "explanation": "Músicas relaxantes diminuem o estresse das vacas, fazendo com que elas produzam até 3% a mais de leite!",
+    "questionAudio": "assets/audio/musica-estudos-mostram-que-vacas-produzem-mais--question.wav",
+    "answerAudio": "assets/audio/musica-estudos-mostram-que-vacas-produzem-mais--answer.wav",
+    "explanationAudio": "assets/audio/musica-estudos-mostram-que-vacas-produzem-mais--explanation.wav"
   },
   {
-    "id": "fisica-quanto-tempo-a-luz-criada-no-centro-do-s",
-    "category": "Física",
-    "prompt": "Quanto tempo a luz criada no centro do Sol demora para conseguir chegar até a superfície dele?",
+    "id": "musica-quanto-tempo-dura-a-musica-mais-curta-do",
+    "category": "Musica",
+    "prompt": "Quanto tempo dura a música mais curta do mundo, gravada pelo Napalm Death?",
     "answers": [
       {
-        "text": "Cerca de 100 mil anos",
+        "text": "1,3 segundo",
         "isCorrect": true
       },
       {
-        "text": "Apenas 8 minutos",
+        "text": "10 segundos",
         "isCorrect": false
       },
       {
-        "text": "Cerca de 3 dias",
+        "text": "30 segundos",
         "isCorrect": false
       },
       {
-        "text": "Quase 5 horas",
+        "text": "1 minuto",
         "isCorrect": false
       }
     ],
-    "explanation": "A luz tromba tanto dentro do Sol que demora até 100 mil anos para sair! Depois disso, leva só 8 minutos para chegar à Terra.",
-    "questionAudio": "assets/audio/fisica-quanto-tempo-a-luz-criada-no-centro-do-s-question.wav",
-    "answerAudio": "assets/audio/fisica-quanto-tempo-a-luz-criada-no-centro-do-s-answer.wav",
-    "explanationAudio": "assets/audio/fisica-quanto-tempo-a-luz-criada-no-centro-do-s-explanation.wav"
+    "explanation": "A música You Suffer tem exatamente 1,316 segundo de duração. Não dá tempo nem de piscar!",
+    "questionAudio": "assets/audio/musica-quanto-tempo-dura-a-musica-mais-curta-do-question.wav",
+    "answerAudio": "assets/audio/musica-quanto-tempo-dura-a-musica-mais-curta-do-answer.wav",
+    "explanationAudio": "assets/audio/musica-quanto-tempo-dura-a-musica-mais-curta-do-explanation.wav"
   },
   {
-    "id": "fisica-por-causa-da-expansao-termica-no-verao-o",
-    "category": "Física",
-    "prompt": "Por causa da expansão térmica no verão, o que acontece com o tamanho da Torre Eiffel?",
+    "id": "musica-os-cupins-comem-madeira-duas-vezes-mais-",
+    "category": "Musica",
+    "prompt": "Os cupins comem madeira duas vezes mais rápido quando ouvem qual estilo musical?",
     "answers": [
       {
-        "text": "Cresce até 15 cm",
+        "text": "Heavy Metal",
         "isCorrect": true
       },
       {
-        "text": "Encolhe 10 cm",
+        "text": "Jazz suave",
         "isCorrect": false
       },
       {
-        "text": "Aumenta 2 metros",
+        "text": "Música clássica",
         "isCorrect": false
       },
       {
-        "text": "Fica 5 cm mais baixa",
+        "text": "Reggae",
         "isCorrect": false
       }
     ],
-    "explanation": "O calor faz o ferro se expandir! Por causa disso, a Torre Eiffel ganha até 15 centímetros de altura nos dias mais quentes do ano.",
-    "questionAudio": "assets/audio/fisica-por-causa-da-expansao-termica-no-verao-o-question.wav",
-    "answerAudio": "assets/audio/fisica-por-causa-da-expansao-termica-no-verao-o-answer.wav",
-    "explanationAudio": "assets/audio/fisica-por-causa-da-expansao-termica-no-verao-o-explanation.wav"
+    "explanation": "As vibrações do rock pesado fazem os cupins mastigarem a madeira numa velocidade muito maior!",
+    "questionAudio": "assets/audio/musica-os-cupins-comem-madeira-duas-vezes-mais--question.wav",
+    "answerAudio": "assets/audio/musica-os-cupins-comem-madeira-duas-vezes-mais--answer.wav",
+    "explanationAudio": "assets/audio/musica-os-cupins-comem-madeira-duas-vezes-mais--explanation.wav"
   },
   {
-    "id": "fisica-uma-colher-de-cha-do-material-de-uma-est",
-    "category": "Física",
-    "prompt": "Uma colher de chá do material de uma estrela de nêutrons pesaria o equivalente a quê?",
+    "id": "musica-qual-banda-colocou-um-som-de-alta-freque",
+    "category": "Musica",
+    "prompt": "Qual banda colocou um som de alta frequência em uma música só para cachorros ouvirem?",
     "answers": [
       {
-        "text": "Uma montanha inteira",
+        "text": "The Beatles",
         "isCorrect": true
       },
       {
-        "text": "Um navio cruzeiro",
+        "text": "Queen",
         "isCorrect": false
       },
       {
-        "text": "Cem aviões juntos",
+        "text": "Pink Floyd",
         "isCorrect": false
       },
       {
-        "text": "Dez elefantes",
+        "text": "Rolling Stones",
         "isCorrect": false
       }
     ],
-    "explanation": "Estrelas de nêutrons são absurdamente densas! Uma só colher desse material pesaria cerca de 6 bilhões de toneladas, igual ao Monte Everest.",
-    "questionAudio": "assets/audio/fisica-uma-colher-de-cha-do-material-de-uma-est-question.wav",
-    "answerAudio": "assets/audio/fisica-uma-colher-de-cha-do-material-de-uma-est-answer.wav",
-    "explanationAudio": "assets/audio/fisica-uma-colher-de-cha-do-material-de-uma-est-explanation.wav"
+    "explanation": "Paul McCartney colocou esse apito no final de A Day in the Life só para ver a reação do seu cachorro!",
+    "questionAudio": "assets/audio/musica-qual-banda-colocou-um-som-de-alta-freque-question.wav",
+    "answerAudio": "assets/audio/musica-qual-banda-colocou-um-som-de-alta-freque-answer.wav",
+    "explanationAudio": "assets/audio/musica-qual-banda-colocou-um-som-de-alta-freque-explanation.wav"
   }
 ]
