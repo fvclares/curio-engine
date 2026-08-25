@@ -1,137 +1,137 @@
 [
   {
-    "id": "musica-qual-foi-a-primeira-musica-tocada-no-esp",
-    "category": "Musica",
-    "prompt": "Qual foi a primeira música tocada no espaço por astronautas da NASA?",
+    "id": "espaco-em-qual-destes-planetas-um-unico-dia-dur",
+    "category": "Espaço",
+    "prompt": "Em qual destes planetas um único dia dura mais tempo do que o ano inteiro?",
     "answers": [
       {
-        "text": "Jingle Bells",
+        "text": "Vênus",
         "isCorrect": true
       },
       {
-        "text": "Parabéns pra Você",
+        "text": "Marte",
         "isCorrect": false
       },
       {
-        "text": "Fly Me to the Moon",
+        "text": "Júpiter",
         "isCorrect": false
       },
       {
-        "text": "Imagine",
+        "text": "Mercúrio",
         "isCorrect": false
       }
     ],
-    "explanation": "Em 1965, os astronautas da missão Gemini 6 tocaram Jingle Bells usando uma gaita escondida e guizos!",
-    "questionAudio": "assets/audio/musica-qual-foi-a-primeira-musica-tocada-no-esp-question.wav",
-    "answerAudio": "assets/audio/musica-qual-foi-a-primeira-musica-tocada-no-esp-answer.wav",
-    "explanationAudio": "assets/audio/musica-qual-foi-a-primeira-musica-tocada-no-esp-explanation.wav"
+    "explanation": "Vênus gira tão devagar que leva 243 dias terrestres para dar uma volta em si mesmo, mas só 225 dias para dar a volta no Sol!",
+    "questionAudio": "assets/audio/espaco-em-qual-destes-planetas-um-unico-dia-dur-question.wav",
+    "answerAudio": "assets/audio/espaco-em-qual-destes-planetas-um-unico-dia-dur-answer.wav",
+    "explanationAudio": "assets/audio/espaco-em-qual-destes-planetas-um-unico-dia-dur-explanation.wav"
   },
   {
-    "id": "musica-estudos-mostram-que-vacas-produzem-mais-",
-    "category": "Musica",
-    "prompt": "Estudos mostram que vacas produzem mais leite quando ouvem qual tipo de música?",
+    "id": "espaco-segundo-os-astronautas-qual-e-o-cheiro-s",
+    "category": "Espaço",
+    "prompt": "Segundo os astronautas, qual é o cheiro surpreendente do espaço?",
     "answers": [
       {
-        "text": "Música calma",
+        "text": "Bife queimado",
         "isCorrect": true
       },
       {
-        "text": "Rock pesado",
+        "text": "Morango fresco",
         "isCorrect": false
       },
       {
-        "text": "Pop animado",
+        "text": "Massa de pizza",
         "isCorrect": false
       },
       {
-        "text": "Eletrônica",
+        "text": "Chocolate amargo",
         "isCorrect": false
       }
     ],
-    "explanation": "Músicas relaxantes diminuem o estresse das vacas, fazendo com que elas produzam até 3% a mais de leite!",
-    "questionAudio": "assets/audio/musica-estudos-mostram-que-vacas-produzem-mais--question.wav",
-    "answerAudio": "assets/audio/musica-estudos-mostram-que-vacas-produzem-mais--answer.wav",
-    "explanationAudio": "assets/audio/musica-estudos-mostram-que-vacas-produzem-mais--explanation.wav"
+    "explanation": "Quem volta de caminhadas espaciais diz sentir cheiro de bife queimado, metal quente e fumaça de solda no traje!",
+    "questionAudio": "assets/audio/espaco-segundo-os-astronautas-qual-e-o-cheiro-s-question.wav",
+    "answerAudio": "assets/audio/espaco-segundo-os-astronautas-qual-e-o-cheiro-s-answer.wav",
+    "explanationAudio": "assets/audio/espaco-segundo-os-astronautas-qual-e-o-cheiro-s-explanation.wav"
   },
   {
-    "id": "musica-quanto-tempo-dura-a-musica-mais-curta-do",
-    "category": "Musica",
-    "prompt": "Quanto tempo dura a música mais curta do mundo, gravada pelo Napalm Death?",
+    "id": "espaco-se-existisse-uma-piscina-grande-o-sufici",
+    "category": "Espaço",
+    "prompt": "Se existisse uma piscina grande o suficiente, qual planeta flutuaria na água?",
     "answers": [
       {
-        "text": "1,3 segundo",
+        "text": "Saturno",
         "isCorrect": true
       },
       {
-        "text": "10 segundos",
+        "text": "Urano",
         "isCorrect": false
       },
       {
-        "text": "30 segundos",
+        "text": "Netuno",
         "isCorrect": false
       },
       {
-        "text": "1 minuto",
+        "text": "Júpiter",
         "isCorrect": false
       }
     ],
-    "explanation": "A música You Suffer tem exatamente 1,316 segundo de duração. Não dá tempo nem de piscar!",
-    "questionAudio": "assets/audio/musica-quanto-tempo-dura-a-musica-mais-curta-do-question.wav",
-    "answerAudio": "assets/audio/musica-quanto-tempo-dura-a-musica-mais-curta-do-answer.wav",
-    "explanationAudio": "assets/audio/musica-quanto-tempo-dura-a-musica-mais-curta-do-explanation.wav"
+    "explanation": "Saturno é formado quase só por gases e é menos denso que a água. Ele boiaria numa boa feito um sabonete!",
+    "questionAudio": "assets/audio/espaco-se-existisse-uma-piscina-grande-o-sufici-question.wav",
+    "answerAudio": "assets/audio/espaco-se-existisse-uma-piscina-grande-o-sufici-answer.wav",
+    "explanationAudio": "assets/audio/espaco-se-existisse-uma-piscina-grande-o-sufici-explanation.wav"
   },
   {
-    "id": "musica-os-cupins-comem-madeira-duas-vezes-mais-",
-    "category": "Musica",
-    "prompt": "Os cupins comem madeira duas vezes mais rápido quando ouvem qual estilo musical?",
+    "id": "espaco-de-que-cor-e-o-por-do-sol-visto-da-super",
+    "category": "Espaço",
+    "prompt": "De que cor é o pôr do sol visto da superfície do planeta Marte?",
     "answers": [
       {
-        "text": "Heavy Metal",
+        "text": "Azul",
         "isCorrect": true
       },
       {
-        "text": "Jazz suave",
+        "text": "Vermelho",
         "isCorrect": false
       },
       {
-        "text": "Música clássica",
+        "text": "Roxo",
         "isCorrect": false
       },
       {
-        "text": "Reggae",
+        "text": "Verde",
         "isCorrect": false
       }
     ],
-    "explanation": "As vibrações do rock pesado fazem os cupins mastigarem a madeira numa velocidade muito maior!",
-    "questionAudio": "assets/audio/musica-os-cupins-comem-madeira-duas-vezes-mais--question.wav",
-    "answerAudio": "assets/audio/musica-os-cupins-comem-madeira-duas-vezes-mais--answer.wav",
-    "explanationAudio": "assets/audio/musica-os-cupins-comem-madeira-duas-vezes-mais--explanation.wav"
+    "explanation": "A poeira fina da atmosfera de Marte faz a luz azul passar com mais facilidade, criando um pôr do sol azul lindo!",
+    "questionAudio": "assets/audio/espaco-de-que-cor-e-o-por-do-sol-visto-da-super-question.wav",
+    "answerAudio": "assets/audio/espaco-de-que-cor-e-o-por-do-sol-visto-da-super-answer.wav",
+    "explanationAudio": "assets/audio/espaco-de-que-cor-e-o-por-do-sol-visto-da-super-explanation.wav"
   },
   {
-    "id": "musica-qual-banda-colocou-um-som-de-alta-freque",
-    "category": "Musica",
-    "prompt": "Qual banda colocou um som de alta frequência em uma música só para cachorros ouvirem?",
+    "id": "espaco-o-que-acontece-com-as-pegadas-que-os-ast",
+    "category": "Espaço",
+    "prompt": "O que acontece com as pegadas que os astronautas deixaram na Lua?",
     "answers": [
       {
-        "text": "The Beatles",
+        "text": "Duram milhões de anos",
         "isCorrect": true
       },
       {
-        "text": "Queen",
+        "text": "Sumiram no dia seguinte",
         "isCorrect": false
       },
       {
-        "text": "Pink Floyd",
+        "text": "Apagam com os ventos",
         "isCorrect": false
       },
       {
-        "text": "Rolling Stones",
+        "text": "Viraram fósseis",
         "isCorrect": false
       }
     ],
-    "explanation": "Paul McCartney colocou esse apito no final de A Day in the Life só para ver a reação do seu cachorro!",
-    "questionAudio": "assets/audio/musica-qual-banda-colocou-um-som-de-alta-freque-question.wav",
-    "answerAudio": "assets/audio/musica-qual-banda-colocou-um-som-de-alta-freque-answer.wav",
-    "explanationAudio": "assets/audio/musica-qual-banda-colocou-um-som-de-alta-freque-explanation.wav"
+    "explanation": "Como a Lua não tem atmosfera, não existe vento nem chuva por lá. As pegadas vão continuar lá por muito tempo!",
+    "questionAudio": "assets/audio/espaco-o-que-acontece-com-as-pegadas-que-os-ast-question.wav",
+    "answerAudio": "assets/audio/espaco-o-que-acontece-com-as-pegadas-que-os-ast-answer.wav",
+    "explanationAudio": "assets/audio/espaco-o-que-acontece-com-as-pegadas-que-os-ast-explanation.wav"
   }
 ]
